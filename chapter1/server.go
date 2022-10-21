@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./objects"
+	"chapter1/objects"
 	"log"
 	"net/http"
 	"os"
