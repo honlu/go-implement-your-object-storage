@@ -2,6 +2,7 @@ package locate
 
 import (
 	"lib/rabbitmq"
+
 	"os"
 	"strconv"
 	"time"

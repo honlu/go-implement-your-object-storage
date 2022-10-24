@@ -1,10 +1,10 @@
 package main
 
 import (
-	"./heartbeat"
-	"./locate"
-	"./objects"
-	"./versions"
+	"apiServer/heartbeat"
+	"apiServer/locate"
+	"apiServer/objects"
+	"apiServer/versions"
 	"log"
 	"net/http"
 	"os"

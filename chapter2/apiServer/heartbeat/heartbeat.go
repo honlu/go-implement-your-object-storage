@@ -12,6 +12,7 @@ var dataServers = make(map[string]time.Time)
 var mutex sync.Mutex
 
 func ListenHeartbeat() {
+	// fmt.Println(os.Getenv("RABBITMQ_SERVER")) // 测试
 	q := rabbitmq.New(os.Getenv("RABBITMQ_SERVER"))
 	defer q.Close()
 	q.Bind("apiServers")

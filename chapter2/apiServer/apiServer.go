@@ -1,12 +1,13 @@
 package main
 
 import (
-	"apiServer/heartbeat"
-	"apiServer/locate"
-	"apiServer/objects"
 	"log"
 	"net/http"
 	"os"
+
+	"apiServer/heartbeat" // 注意写法：本项目包下
+	"apiServer/locate"
+	"apiServer/objects"
 )
 
 func main() {
