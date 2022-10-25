@@ -12,7 +12,8 @@ git push --set-upstream origin honlu
 环境相关：
 虚拟机：Ubuntu 20.04
 Go版本：go 1.13
-注意：由于代码是在ubuntu上测试通过的，但此仓库是windows上再修改和上传的，所以有些格式会发生转化。比如LF will be replaced by CRLF。
+ElasticSearch: 5.x版。【6.x删除string,7.x没有索引。无法运行此项目】
+注意：代码是在ubuntu上测试通过的
 
 ## To do List
 - [x] chapter1 对象存储简介 [2022-10-20 完成]
