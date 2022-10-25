@@ -11,6 +11,7 @@ import (
 /*
 w: 用于写入http的响应
 r: 代表当前处理的HTTP的请求
+LISTEN_ADDRESS=:12345 STORAGE_ROOT=/tmp
 */
 func get(w http.ResponseWriter, r *http.Request) {
 	f, e := os.Open(os.Getenv("STORAGE_ROOT") + "/objects/" +
