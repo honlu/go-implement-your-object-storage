@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	go heartbeat.ListenHeartbeat()
+	go heartbeat.ListenHeartbeat() // 开启一个协程
 	http.HandleFunc("/objects/", objects.Handler)
 	http.HandleFunc("/locate/", locate.Handler)
 	log.Fatal(http.ListenAndServe(os.Getenv("LISTEN_ADDRESS"), nil))
