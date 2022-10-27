@@ -6,6 +6,9 @@ import (
 	"strings"
 )
 
+/*
+用于处理HTTP 请求
+*/
 func Handler(w http.ResponseWriter, r *http.Request) {
 	m := r.Method
 	if m != http.MethodGet {

@@ -7,8 +7,8 @@ import (
 )
 
 type PutStream struct {
-	writer *io.PipeWriter
-	c      chan error
+	writer *io.PipeWriter // 用于实现Write方法
+	c      chan error     // 用于把在一个goroutine传输数据的过程中发生的错误传会主线程。
 }
 
 func NewPutStream(server, object string) *PutStream {

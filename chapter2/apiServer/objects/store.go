@@ -5,6 +5,10 @@ import (
 	"net/http"
 )
 
+/*
+storeObject:
+以object调用putStream函数。
+*/
 func storeObject(r io.Reader, object string) (int, error) {
 	stream, e := putStream(object)
 	if e != nil {
